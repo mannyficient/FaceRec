@@ -1,11 +1,15 @@
 import React from "react";
 
-const mannyrank = 4;
-
-const Rank = () => {
+const Rank = ({ name, entries }) => {
+  console.log(entries);
   return (
-    <div className='white f3'>
-      <p>{`Manny your current rank is ${mannyrank}`}</p>
+    <div>
+      <div className='white f3'>
+        <p>{`${name}, your current entry count is...`}</p>
+      </div>
+      <div className='white f1'>
+        <p>{`${entries}`}</p>
+      </div>
     </div>
   );
 };
